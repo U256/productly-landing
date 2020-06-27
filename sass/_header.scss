@@ -1,0 +1,141 @@
+.header {
+   margin-top: 11px;
+
+   &__navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 25px 0;
+   }
+
+   &__hero {
+      display: flex;
+      flex-wrap: wrap;
+   }
+}
+
+//in navbar:
+.navbar-logo {
+   position: relative;
+   top: 9px;
+   left: 0;
+   margin: 0 auto 0 0; //!!!
+
+   &__icon {
+      position: relative;
+      top: -3px;
+      left: 0;
+      margin-right: 8px;
+   }
+
+   &__text {}
+}
+
+ul {
+   display: flex;
+   margin-right: 51px;
+
+   li {
+      list-style-type: none;
+      padding: 0 5px;
+      margin: 0 6px;
+
+      a {
+         text-decoration: none;
+         font-size: 1.4rem;
+         line-height: 28px;
+         color: #2f281e;
+      }
+   }
+
+}
+
+.navbar-buttons {
+
+   .navbar-signin {
+      width: 102px;
+      height: 46px;
+      color: #173a56;
+      font-size: 1.6rem;
+      font-weight: 600;
+      border: 1px solid #bcd0e5;
+      border-radius: 4px;
+      background-color: #fff;
+      outline: none;
+      margin-right: 10px;
+   }
+
+   .navbar-signup {
+      border: none;
+      color: #ffffff;
+      width: 110px;
+      height: 46px;
+      font-size: 1.6rem;
+      font-weight: 600;
+      border-radius: 4px;
+      outline: none;
+      background-color: #ff9900;
+   }
+}
+
+
+
+//in hero:
+.hero-present {
+   padding-top: 101px;
+   border: 1px dotted #f44;
+   flex: 0 1 47%;
+
+   .hero-present__title {
+      margin-bottom: 33px;
+      padding-right: 45px;
+      color: #2f281e;
+      font-size: 4.4rem;
+      font-weight: 700;
+      line-height: 5.4rem;
+   }
+
+   .hero-present__text {
+      margin: 0 0 54px 0;
+      padding-right: 48px;
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+      color: #544837;
+   }
+
+   .hero-present__buttons {
+      margin-bottom: 60px;
+      .start {
+         margin-right: 26px;
+         width: 175px;
+         height: 53px;
+         border: none;
+         border-radius: 4px;
+         background-color: #ff9900;
+         color: #ffffff;
+         font-size: 1.6rem;
+         font-weight: 700;
+      }
+
+      .promo-video {
+         background-color: #fff;
+         outline: none;
+         border: none;
+         width: 175px;
+         height: 53px;
+         color: #ff9900;
+         font-weight: 600;
+         font-size: 1.6rem;
+         text-decoration: underline;
+         background: url(/images/icons/Triangle_play.png) no-repeat 0 center;
+      }
+
+   }
+}
+
+
+.hero-image {
+   flex: 0 1 50%;
+   border: 1px dotted #222;
+   //height: 495px;
+   background: url(/images/100-layers.svg) no-repeat 0 0/cover;
+}

@@ -1,16 +1,63 @@
 html {
    font-size: 10px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
 }
 
 * {
    box-sizing: border-box;
-   font-family: sans-serif;
+   //font-family: sans-serif;
 }
 
-//@import '_header';
+@import '_header';
+@import '_fonts';
 
-.header {}
 
-.header__logo {}
 
-.header__hero {}
+//от 320px до 576px авто ширина контента и фиксированные отступы 15px. 
+//от 576px до 768px ширина 540px и динамические отступы. 
+//от 768px до 992px ширина 720px и динамические отступы. 
+//от 992px до 1200px ширина 960px и динамические отступы. 
+//от 1200px ширина 1180px и динамические отступы. (тут!!! поменял)
+
+section,
+header,
+footer {
+   padding: 0 10px;
+}
+
+@media (min-width: 575.98px) {
+
+   section,
+   header,
+   footer {
+      padding: 0 calc(50vw - 270px);
+   }
+}
+
+@media (min-width: 767.98px) {
+
+   section,
+   header,
+   footer {
+      padding: 0 calc(50vw - 360px);
+   }
+}
+
+@media (min-width: 991.98px) {
+
+   section,
+   header,
+   footer {
+      padding: 0 calc(50vw - 480px);
+   }
+}
+
+@media (min-width: 1199.98px) {
+
+   section,
+   header,
+   footer {
+      padding: 0 calc(50vw - 554px);
+   }
+}
