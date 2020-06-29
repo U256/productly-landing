@@ -11,6 +11,11 @@ html {
 
 @import '_header';
 @import '_fonts';
+@import '_functions';
+@import '_buyers';
+@import '_contact';
+@import '_articels';
+@import '_footer';
 
 
 
@@ -36,6 +41,10 @@ footer {
 }
 
 @media (min-width: 767.98px) {
+
+   html {
+      font-size: 9px;
+   }
 
    section,
    header,

@@ -1,4 +1,9 @@
 .header {
+
+   ////!!!!!!!!!!
+   //display: none;
+   @media (min-width: 991.98px) {}
+
    margin-top: 11px;
 
    &__navbar {
@@ -82,7 +87,6 @@ ul {
 //in hero:
 .hero-present {
    padding-top: 101px;
-   border: 1px dotted #f44;
    flex: 0 1 47%;
 
    .hero-present__title {
@@ -104,6 +108,7 @@ ul {
 
    .hero-present__buttons {
       margin-bottom: 60px;
+
       .start {
          margin-right: 26px;
          width: 175px;
@@ -135,7 +140,51 @@ ul {
 
 .hero-image {
    flex: 0 1 50%;
-   border: 1px dotted #222;
-   //height: 495px;
-   background: url(/images/100-layers.svg) no-repeat 0 0/cover;
+   min-height: 537px;
+
+   .img-container {
+      margin-top: 15px;
+      background: url(/images/100-layers.svg) no-repeat 0 100%/100%;
+      width: 108%;
+      height: 100%;
+   }
 }
+
+
+
+.header {
+
+   &__navbar {}
+
+   &__hero {}
+}
+
+.navbar-logo {
+
+   &__icon {}
+
+   &__text {}
+}
+
+.navbar-buttons {}
+
+.navbar-signin {}
+
+.navbar-signup {}
+
+.hero-present {
+
+   &__title {}
+
+   &__text {}
+
+   &__buttons {}
+}
+
+.start {}
+
+.promo-video {}
+
+.hero-image {}
+
+.img-container {}

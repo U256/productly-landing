@@ -1,0 +1,92 @@
+.footer {
+   display: flex;
+   display: none;
+
+
+   display: none;
+
+
+
+   justify-content: space-between;
+
+   &__logo {
+      flex: 0 1 29%;
+
+      .footer-logo__icon {
+         position: relative;
+         top: -3px;
+         left: 0;
+         margin-right: 8px;
+      }
+
+      .footer-logo__text {}
+   }
+
+   &__qlinks {
+      flex: 0 21%;
+   }
+
+   &__legal {
+      flex: 0 1 21%;
+   }
+
+   &__sign-bar {
+      flex: 0 1 29%;
+   }
+}
+
+.footer__titles {
+   //3 titles!
+   color: #2f281e;
+   font-family: "Gotham";
+   font-size: 2rem;
+   font-weight: 700;
+   line-height: 3rem;
+   margin-bottom: 35px;
+}
+
+.qlinks {
+
+   &__title {}
+
+   &__item {
+      a {
+         color: #544837;
+         font-size: 1.6rem;
+         font-weight: 400;
+         line-height: 3.5rem;
+         text-decoration: none;
+      }
+   }
+}
+
+.legal {
+
+   &__title {}
+
+   &__item {
+      a {
+         color: #544837;
+         font-size: 1.6rem;
+         font-weight: 400;
+         line-height: 3.5rem;
+         text-decoration: none;
+      }
+   }
+}
+
+.sign-bar {
+
+   &__title {}
+
+   &__form {}
+
+   //in form:
+   &__input {
+      display: block;
+   }
+
+   &__button {}
+
+
+}
