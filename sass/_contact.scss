@@ -1,20 +1,27 @@
 .contact {
-   display: none;
-
    background: url(/images/contacts-bgr.svg) no-repeat center top;
+   max-width: 1400px;
    margin-bottom: 30px;
+   position: relative;
 
-   &__hero {
+   &__text {
       padding-top: 240px;
    }
 
-   //in hero:
+   &__experts {
+      width: 100%;
+      color: #2f281e;
+      font-size: 16px; ///
+   }
+}
+
+.cntt-text {
    &__title {
       text-align: center;
       max-width: 400px;
       margin: 0 auto 27px;
       font-weight: 700;
-      font-size: 3.6rem;
+      font-size: 36px;
       color: #2f281e;
    }
 
@@ -23,8 +30,8 @@
       max-width: 550px;
       margin: 0 auto 47px;
       color: #567592;
-      font-size: 1.6rem;
-      line-height: 2.6rem;
+      font-size: 16px;
+      line-height: 26px;
    }
 
    &__btn {
@@ -39,26 +46,15 @@
          border: none;
          background-color: #ff9900;
          color: #ffffff;
-         font-size: 1.6rem;
+         font-size: 16px;
          font-weight: 700;
          outline: none;
       }
    }
-
-   &__experts {
-      width: 100%;
-      display: flex;
-      position: relative;
-      color: #2f281e;
-      font-size: 1.6rem;
-   }
 }
-
 
 .expert-item {
    display: flex;
-   //background-color: #333;
-   margin-bottom: 27px;
 
    &__text {
       position: relative;
@@ -83,9 +79,15 @@
 }
 
 .expert-item-1 {
+   //special item
    position: absolute;
-   top: -648px;
-   left: -65px;
+   top: 190px;
+   left: 83px;
+
+   @media (max-width: 1299.98px) {
+      top: 130px;
+      left: 20px;
+   }
 
    .expert-item__text {
       order: 2;
@@ -99,25 +101,44 @@
 
 .expert-item-2 {
    position: absolute;
-   top: -367px;
-   left: 45px;
+   top: 472px;
+   left: 175px;
+
+   @media (max-width: 1199.98px) {
+      top: 475px;
+      left: 40px;
+   }
 }
 
 .expert-item-3 {
    position: absolute;
-   top: -267px;
-   left: 400px;
+   top: 572px;
+   left: 545px;
+
+   @media (max-width: 1199.98px) {
+      top: 640px;
+      left: 30%;
+   }
 }
 
 .expert-item-4 {
    position: absolute;
-   top: -390px;
-   right: -15px;
-   ;
+   top: 445px;
+   right: 70px;
+
+   @media (max-width: 1199.98px) {
+      top: 485px;
+      right: 15px;
+   }
 }
 
 .expert-item-5 {
    position: absolute;
-   top: -718px;
-   right: 20px;
+   top: 120px;
+   right: 168px;
+
+   @media (max-width: 1199.98px) {
+      top: 80px;
+      right: 8px;
+   }
 }

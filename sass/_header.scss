@@ -1,24 +1,27 @@
 .header {
-
-   ////!!!!!!!!!!
-   //display: none;
-   @media (min-width: 991.98px) {}
-
    margin-top: 11px;
+   margin-bottom: 60px;
+   display: none;
+
+   @media (max-width: 991.98px) {
+      margin-bottom: 30px;
+   }
 
    &__navbar {
       display: flex;
       justify-content: space-between;
       padding: 25px 0;
+
+      @media (max-width: 991.98px) {
+         padding: 15px 0;
+      }
    }
 
    &__hero {
       display: flex;
-      flex-wrap: wrap;
    }
 }
 
-//in navbar:
 .navbar-logo {
    position: relative;
    top: 9px;
@@ -35,28 +38,79 @@
    &__text {}
 }
 
-ul {
-   display: flex;
-   margin-right: 51px;
+.navbar-nav {
+   &__burger {
+      display: none;
+      margin-top: 4px;
+      border: none;
+      background-color: #fff;
 
-   li {
-      list-style-type: none;
-      padding: 0 5px;
-      margin: 0 6px;
+      @media (max-width: 767.98px) {
+         display: inline-block;
+      }
 
-      a {
-         text-decoration: none;
-         font-size: 1.4rem;
-         line-height: 28px;
-         color: #2f281e;
+      img {
+         outline: none;
+         color: #fff;
       }
    }
 
+   &__small-menu {
+      display: none;
+
+      @media (max-width: 767.98px) {
+         //display: flex;
+      }
+
+      li {
+         a {}
+      }
+
+      .small-menu__signin {}
+
+      .small-menu__signup {}
+   }
+
+
+
+   &__wide-menu {
+      display: flex;
+      margin-right: 51px;
+
+      @media (max-width: 991.98px) {
+         margin-right: 10px;
+      }
+
+      @media (max-width: 767.98px) {
+         display: none;
+      }
+
+      li {
+         list-style-type: none;
+         padding: 0 5px;
+         margin: 0 6px;
+
+         @media (max-width: 991.98px) {
+            padding: 0 3px;
+            margin: 0 4px;
+         }
+
+         a {
+            text-decoration: none;
+            font-size: 1.4rem;
+            line-height: 28px;
+            color: #2f281e;
+         }
+      }
+   }
 }
 
-.navbar-buttons {
+.navbar-login {
+   @media (max-width: 767.98px) {
+      display: none;
+   }
 
-   .navbar-signin {
+   &__signin {
       width: 102px;
       height: 46px;
       color: #173a56;
@@ -67,9 +121,13 @@ ul {
       background-color: #fff;
       outline: none;
       margin-right: 10px;
+
+      @media (max-width: 991.98px) {
+         width: 80px;
+      }
    }
 
-   .navbar-signup {
+   &__signup {
       border: none;
       color: #ffffff;
       width: 110px;
@@ -79,112 +137,131 @@ ul {
       border-radius: 4px;
       outline: none;
       background-color: #ff9900;
+
+      @media (max-width: 991.98px) {
+         width: 80px;
+      }
    }
 }
 
-
-
-//in hero:
 .hero-present {
    padding-top: 101px;
    flex: 0 1 47%;
 
-   .hero-present__title {
+   @media (max-width: 991.98px) {
+      padding-top: 40px;
+   }
+
+   @media (max-width: 575.98px) {
+      flex-basis: 100%;
+   }
+
+   &__title {
       margin-bottom: 33px;
       padding-right: 45px;
       color: #2f281e;
       font-size: 4.4rem;
       font-weight: 700;
       line-height: 5.4rem;
+
+      @media (max-width: 575.98px) {
+         text-align: center;
+         padding-right: 0;
+      }
    }
 
-   .hero-present__text {
+   &__text {
       margin: 0 0 54px 0;
       padding-right: 48px;
       font-size: 1.8rem;
       line-height: 2.8rem;
       color: #544837;
+
+      @media (max-width: 991.98px) {
+         margin: 0 0 25px 0;
+      }
+
+      @media (max-width: 575.98px) {
+         text-align: center;
+         padding: 0 15px;
+      }
+
+      // @media (max-width: 767.98px) {
+      //    display: none;
+      // }
    }
 
-   .hero-present__buttons {
+   &__buttons {
       margin-bottom: 60px;
 
-      .start {
-         margin-right: 26px;
-         width: 175px;
-         height: 53px;
-         border: none;
-         border-radius: 4px;
-         background-color: #ff9900;
-         color: #ffffff;
-         font-size: 1.6rem;
-         font-weight: 700;
+      @media (max-width: 575.98px) {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding-right: 0;
+      }
+   }
+
+   &__start-btn {
+      margin-right: 26px;
+      width: 175px;
+      height: 53px;
+      border: none;
+      border-radius: 4px;
+      background-color: #ff9900;
+      color: #ffffff;
+      font-size: 1.6rem;
+      font-weight: 700;
+
+      @media (max-width: 575.98px) {
+         margin-right: 0;
+      }
+   }
+
+   &__video-btn {
+      background-color: #fff;
+      outline: none;
+      border: none;
+      width: 175px;
+      height: 53px;
+      color: #ff9900;
+      font-weight: 600;
+      font-size: 1.6rem;
+      text-decoration: underline;
+      background: url(/images/icons/Triangle_play.png) no-repeat 0 center;
+
+      @media (max-width: 991.98px) {
+         margin-top: 15px;
       }
 
-      .promo-video {
-         background-color: #fff;
-         outline: none;
-         border: none;
-         width: 175px;
-         height: 53px;
-         color: #ff9900;
-         font-weight: 600;
-         font-size: 1.6rem;
-         text-decoration: underline;
-         background: url(/images/icons/Triangle_play.png) no-repeat 0 center;
+      @media (max-width: 575.98px) {
+         margin-left: 30px;
       }
-
    }
 }
-
 
 .hero-image {
    flex: 0 1 50%;
    min-height: 537px;
 
-   .img-container {
+   @media (max-width: 575.98px) {
+      display: none;
+   }
+
+   &__container {
       margin-top: 15px;
-      background: url(/images/100-layers.svg) no-repeat 0 100%/100%;
+      background: url(/images/100-layers.svg) no-repeat 100%/100%;
       width: 108%;
       height: 100%;
+
+      @media (max-width: 1199.98px) {
+         margin-top: -30px;
+      }
+
+      @media (max-width: 767.98px) {
+         width: 100%;
+      }
+
+
    }
 }
-
-
-
-.header {
-
-   &__navbar {}
-
-   &__hero {}
-}
-
-.navbar-logo {
-
-   &__icon {}
-
-   &__text {}
-}
-
-.navbar-buttons {}
-
-.navbar-signin {}
-
-.navbar-signup {}
-
-.hero-present {
-
-   &__title {}
-
-   &__text {}
-
-   &__buttons {}
-}
-
-.start {}
-
-.promo-video {}
-
-.hero-image {}
-
-.img-container {}

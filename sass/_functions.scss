@@ -1,14 +1,11 @@
 .functions {
    display: flex;
-
-   //
    display: none;
-   
    flex-direction: column;
    background: url(/images/functions-bgr.svg) no-repeat center bottom;
 
    &__title {
-      margin: 82px auto 56px;
+      margin: 22px auto 56px; //было сверху 82пх
       padding-left: 17px;
       text-align: center;
       max-width: 480px;
@@ -21,41 +18,60 @@
    &__items {
       padding-left: 18px;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
    }
 
    &__signup {
+      margin-bottom: 90px;
+      align-self: center;
       position: relative;
       top: 0;
       left: 10px;
-      align-self: center;
       width: 175px;
       height: 53px;
+      border: none;
       border-radius: 4px;
       background-color: #ff9900;
       color: #ffffff;
       font-size: 1.6rem;
       font-weight: 700;
-      border: none;
-      margin-bottom: 90px;
+
+      @media (max-width: 575.98px) {
+         left: 0;
+      }
    }
 }
 
-//in "items":
-.functions__item {
+.func-item {
+   flex: 0 1 25%;
    max-width: 240px;
    padding-right: 25px;
 
-   &-logo {
+   @media (max-width: 767.98px) {
+      flex: 0 1 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+   }
+
+   &__logo {
       width: 50px;
       height: 50px;
       border-radius: 19px;
       margin-bottom: 34px;
+
+      @media (max-width: 767.98px) {
+         margin-bottom: 10px;
+      }
+
+      @media (max-width: 575.98px) {}
    }
 
    .logo-1 {
       background: #7752be url(/images/icons/func__icon1.png) no-repeat center;
-      background-size: 15px;
+      background-size: 10px;
    }
 
    .logo-2 {
@@ -74,14 +90,18 @@
    }
 
 
-   &-title {
+   &__title {
       color: #2f281e;
       font-size: 2.2rem;
       font-weight: 600;
       margin-bottom: 19px;
+
+      @media (max-width: 767.98px) {
+         margin-bottom: 7px;
+      }
    }
 
-   &-text {
+   &__text {
       color: #544837;
       font-size: 1.6rem;
       line-height: 2.6rem;

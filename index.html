@@ -11,23 +11,38 @@
 
 <body>
    <header class="header">
-
-      <nav class="header__navbar">
+      <div class="header__navbar">
          <div class="navbar-logo">
             <img class="navbar-logo__icon" src="/images/icons/major-icon.png" alt="icon">
             <img class="navbar-logo__text" src="/images/icons/text-in-logo.svg" alt="productly">
          </div>
-         <ul>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Customers</a></li>
-            <li><a href="#">Pricng</a></li>
-            <li><a href="#">Resources</a></li>
-         </ul>
-         <div class="navbar-buttons">
-            <button class="navbar-signin">Sign In</button>
-            <button class="navbar-signup">Sign Up</button>
+         <nav class="navbar-nav">
+            <button class="navbar-nav__burger">
+               <img src="/images/icons/burger-icon.svg" alt="menu">
+            </button>
+            <!-- <ul class="navbar-nav__small-menu">
+               <li><a href="#">Product</a></li>
+               <li><a href="#">Customers</a></li>
+               <li><a href="#">Pricng</a></li>
+               <li><a href="#">Resources</a></li>
+               <div class="navbar-login">
+                  <button class="small-menu__signin navbar-login__signin">Sign In</button>
+                  <button class="small-menu__signup navbar-login__signup">Sign Up</button>
+               </div>
+            </ul> -->
+            <ul class="navbar-nav__wide-menu">
+               <li><a href="#">Product</a></li>
+               <li><a href="#">Customers</a></li>
+               <li><a href="#">Pricng</a></li>
+               <li><a href="#">Resources</a></li>
+            </ul>
+            
+         </nav>
+         <div class="navbar-login">
+            <button class="navbar-login__signin">Sign In</button>
+            <button class="navbar-login__signup">Sign Up</button>
          </div>
-      </nav>
+      </div>
       <div class="header__hero">
          <div class="hero-present">
             <div class="hero-present__title">The Design Thinking superpowers</div>
@@ -37,12 +52,12 @@
                experience.
             </div>
             <div class="hero-present__buttons">
-               <button class="start">Get started</button>
-               <button class="promo-video">Watch the Video</button>
+               <button class="hero-present__start-btn">Get started</button>
+               <button class="hero-present__video-btn">Watch the Video</button>
             </div>
          </div>
          <div class="hero-image">
-            <div class="img-container"></div>
+            <div class="hero-image__container"></div>
          </div>
       </div>
    </header>
@@ -52,39 +67,39 @@
       </div>
       <div class="functions__items">
 
-         <div class="functions__item">
-            <div class="functions__item-logo logo-1"></div>
-            <div class="functions__item-title">
+         <div class="func-item">
+            <div class="func-item__logo logo-1"></div>
+            <div class="func-item__title">
                First click tests
             </div>
-            <div class="functions__item-text">
-               While most people enjoy casino gambling .
+            <div class="func-item__text">
+               While most people enjoy casino gambling.
             </div>
          </div>
-         <div class="functions__item">
-            <div class="functions__item-logo logo-2"></div>
-            <div class="functions__item-title">
+         <div class="func-item">
+            <div class="func-item__logo logo-2"></div>
+            <div class="func-item__title">
                Design surveys
             </div>
-            <div class="functions__item-text">
+            <div class="func-item__text">
                Sports betting, lottery and bingo playing for the fun.
             </div>
          </div>
-         <div class="functions__item">
-            <div class="functions__item-logo logo-3"></div>
-            <div class="functions__item-title">
+         <div class="func-item">
+            <div class="func-item__logo logo-3"></div>
+            <div class="func-item__title">
                Preference tests
             </div>
-            <div class="functions__item-text">
+            <div class="func-item__text">
                The Myspace page defines the individual.
             </div>
          </div>
-         <div class="functions__item">
-            <div class="functions__item-logo logo-4"></div>
-            <div class="functions__item-title">
+         <div class="func-item">
+            <div class="func-item__logo logo-4"></div>
+            <div class="func-item__title">
                Five second tests
             </div>
-            <div class="functions__item-text">
+            <div class="func-item__text">
                Personal choices and the overall personality of the person.
             </div>
          </div>
@@ -93,40 +108,42 @@
       <button class="functions__signup">SIGN UP NOW</button>
    </section>
    <section class="buyer">
-      <div class="buyer__paragraph">
-         <div class="buyer__pretitle">Effortless Validation for</div>
-         <div class="buyer__title">Design Professionals</div>
-         <div class="buyer__text">
-            The Myspace page defines the individual, his or her characteristics, traits, personal choices and the
-            overall
-            personality of the person.
-         </div>
-         <div class="buyer__articles">
-            <div class="buyer__article">
-               <div class="article-title">
-                  Accessory makers
+      <div class="buyer__text">
+         <div class="text-item">
+            <div class="text-item__pretitle">Effortless Validation for</div>
+            <div class="text-item__title">Design Professionals</div>
+            <div class="text-item__text">
+               The Myspace page defines the individual, his or her characteristics, traits, personal choices and the
+               overall
+               personality of the person.
+            </div>
+            <div class="text-item__points">
+               <div class="point-item">
+                  <div class="point-item__title">
+                     Accessory makers
+                  </div>
+                  <div class="point-item__text">
+                     While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun
+                  </div>
                </div>
-               <div class="article-text">
-                  While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun
+               <div class="point-item">
+                  <div class="point-item__title">
+                     Alterationists
+                  </div>
+                  <div class="point-item__text">
+                     If you are looking for a new way to promote your business that won’t cost you more money
+                  </div>
+               </div>
+               <div class="point-item">
+                  <div class="point-item__title">
+                     Custom Design designers
+                  </div>
+                  <div class="point-item__text">
+                     If you are looking for a new way to promote your business that won’t cost you more money,
+                  </div>
                </div>
             </div>
-            <div class="buyer__article">
-               <div class="article-title">
-                  Alterationists
-               </div>
-               <div class="article-text">
-                  If you are looking for a new way to promote your business that won’t cost you more money
-               </div>
-            </div>
-            <div class="buyer__article">
-               <div class="article-title">
-                  Custom Design designers
-               </div>
-               <div class="article-text">
-                  If you are looking for a new way to promote your business that won’t cost you more money,
-               </div>
-            </div>
-         </div>
+         </div> 
       </div>
       <div class="buyer__image">
          <div class="img-container img-container-1">
@@ -134,24 +151,26 @@
          </div>
       </div>
    </section>
-   <section class="buyer buyer-2">
-      <div class="buyer__paragraph buyer-2__paragraph">
-         <div class="buyer__pretitle buyer-2__pretitle">Easier decision making for</div>
-         <div class="buyer__title buyer-2__title">Product Managers</div>
-         <div class="buyer__text buyer-2__text">
-            The Myspace page defines the individual, his or her characteristics, traits, personal choices and the
-            overall
-            personality of the person.
-         </div>
-         <div class="buyer__articles buyer-2__articles">
-            <div class="buyer-2__article">
-               Never worry about overpaying for your energy again.
+   <section class="buyer buyer-inverse">
+      <div class="buyer__text buyer-inverse__text">
+         <div class="text-item text-item-inverse">
+            <div class="text-item__pretitle text-item-inverse__pretitle">Easier decision making for</div>
+            <div class="text-item__title text-item-inverse__title">Product Managers</div>
+            <div class="text-item__text text-item-inverse__text">
+               The Myspace page defines the individual, his or her characteristics, traits, personal choices and the
+               overall
+               personality of the person.
             </div>
-            <div class="buyer-2__article">
-               We will only switch you to energy companies that we trust and will treat you right
-            </div>
-            <div class="buyer-2__article">
-               We track the markets daily and know where the savings are.
+            <div class="text-item__points text-item-inverse__points">
+               <div class="point-item-inverse">
+                  Never worry about overpaying for your energy again.
+               </div>
+               <div class="point-item-inverse">
+                  We will only switch you to energy companies that we trust and will treat you right
+               </div>
+               <div class="point-item-inverse">
+                  We track the markets daily and know where the savings are.
+               </div>
             </div>
          </div>
       </div>
@@ -161,41 +180,42 @@
          </div>
       </div>
    </section>
-   <section class="buyer">
-      <div class="buyer__paragraph">
-         <div class="buyer__pretitle">Optimisation for</div>
-         <div class="buyer__title">Marketers</div>
-         <div class="buyer__text">
-            Few would argue that, despite the advancements of feminism over the past three decades, women still face a
-            double
-            standard when it comes to their behavior.
-         </div>
-         <div class="buyer__articles">
-            <div class="buyer__article">
-               <div class="article-title">
-                  Accessory makers
+   <section class="buyer buyer-3">
+      <div class="buyer__text">
+         <div class="text-item">
+            <div class="text-item__pretitle">Optimisation for</div>
+            <div class="text-item__title">Marketers</div>
+            <div class="text-item__text">
+               Few would argue that, despite the advancements of feminism over the past three decades, women still face a double
+               standard when it comes to their behavior.
+            </div>
+            <div class="text-item__points">
+               <div class="point-item">
+                  <div class="point-item__title">
+                     Accessory makers
+                  </div>
+                  <div class="point-item__text">
+                     While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun
+                  </div>
                </div>
-               <div class="article-text">
-                  While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun
+               <div class="point-item">
+                  <div class="point-item__title">
+                     Alterationists
+                  </div>
+                  <div class="point-item__text">
+                     If you are looking for a new way to promote your business that won’t cost you more money
+                  </div>
+               </div>
+               <div class="point-item">
+                  <div class="point-item__title">
+                     Custom Design designers
+                  </div>
+                  <div class="point-item__text">
+                     If you are looking for a new way to promote your business that won’t cost you more money
+                  </div>
                </div>
             </div>
-            <div class="buyer__article">
-               <div class="article-title">
-                  Alterationists
-               </div>
-               <div class="article-text">
-                  If you are looking for a new way to promote your business that won’t cost you more money,
-               </div>
-            </div>
-            <div class="buyer__article">
-               <div class="article-title">
-                  Custom Design designers
-               </div>
-               <div class="article-text">
-                  If you are looking for a new way to promote your business that won’t cost you more money,
-               </div>
-            </div>
-         </div>
+         </div>        
       </div>
       <div class="buyer__image">
          <div class="img-container img-container-3">
@@ -204,14 +224,16 @@
       </div>
    </section>
    <section class="contact">
-      <div class="contact__hero">
-         <div class="contact__title">Need a super hero?</div>
-         <div class="contact__text">
-            Do you require some help for your project: Conception workshop,
-            prototyping, marketing strategy, landing page, Ux/UI?
-         </div>
-         <div class="contact__btn">
-            <button>Contact our expert</button>
+      <div class="contact__text">
+         <div class="cntt-text">
+            <div class="cntt-text__title">Need a super hero?</div>
+            <div class="cntt-text__text">
+               Do you require some help for your project: Conception workshop,
+               prototyping, marketing strategy, landing page, Ux/UI?
+            </div>
+            <div class="cntt-text__btn">
+               <button>Contact our expert</button>
+            </div>
          </div>
       </div>
       <div class="contact__experts">
