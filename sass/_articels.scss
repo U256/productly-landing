@@ -20,19 +20,33 @@
 
    &__postbar {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
-      margin-bottom: 200px;
+      margin-bottom: 100px;
    }
 
    &__endline {
       height: 2px;
       width: 100%;
       background-color: #dee8f2;
+      margin-bottom: 100px;
+
+      @media (max-width: 767.98px) {
+         margin-bottom: 10px;
+      }
    }
 }
 
 .postbar-item {
    flex: 0 1 30%;
+
+   @media (max-width: 991.98px) {
+      margin-bottom: 30px;
+   }
+
+   @media (max-width: 767.98px) {
+      width: 290px;
+   }
 
    &__logo {
 
@@ -70,8 +84,6 @@
       display: inline-block;
    }
 
-
-
    &__title {
       width: 88%;
       color: #2f281e;
@@ -79,5 +91,4 @@
       font-weight: 700;
       line-height: 3.4rem;
    }
-
 }

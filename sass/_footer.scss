@@ -1,51 +1,91 @@
 .footer {
    display: flex;
-   display: none;
+   margin-bottom: 20px;
 
-
-   display: none;
-
+   @media (max-width: 991.98px) {
+      flex-wrap: wrap;
+   }
 
    justify-content: space-between;
+
+   @media (max-width: 767.98px) {
+      justify-content: space-around;
+   }
 
    &__logo {
       flex: 0 1 29%;
 
-      .footer-logo__icon {
-         position: relative;
-         top: -3px;
-         left: 0;
-         margin-right: 8px;
+      @media (max-width: 991.98px) {
+         flex: 0 1 100%;
+         margin: 50px auto;   
+         display: flex;
+         justify-content: center;     
       }
-
-      .footer-logo__text {}
    }
 
    &__qlinks {
-      flex: 0 21%;
+      flex: 0 1 21%;
+
+      @media (max-width: 991.98px) {
+         flex: 0 1 33%;
+      }
+      @media (max-width: 767.98px) {
+         order: 3;  
+      }
    }
 
    &__legal {
       flex: 0 1 21%;
+
+      @media (max-width: 991.98px) {
+         flex: 0 1 33%;
+      }
+      @media (max-width: 767.98px) {
+         order: 4;
+      }
    }
 
    &__sign-bar {
       flex: 0 1 29%;
+
+      @media (max-width: 991.98px) {
+         flex: 0 1 33%;
+      }
+      @media (max-width: 767.98px) {
+         align-self: center;
+         order: 2;
+         flex: 1 1 100%;
+         margin-bottom: 30px;
+      }
    }
+}
+
+.footer-logo{
+   &__icon {
+      position: relative;
+      top: -3px;
+      left: 0;
+      margin-right: 8px;
+   }
+
+   &__text {}
 }
 
 .footer__titles {
    //3 titles!
+   //display: flex;
    color: #2f281e;
    font-family: "Gotham";
    font-size: 2rem;
    font-weight: 700;
    line-height: 3rem;
    margin-bottom: 35px;
+   @media (max-width: 767.98px) {
+      margin-bottom: 15px;
+   }
 }
 
 .qlinks {
-
    &__title {}
 
    &__item {
@@ -60,7 +100,6 @@
 }
 
 .legal {
-
    &__title {}
 
    &__item {
@@ -75,7 +114,11 @@
 }
 
 .sign-bar {
-
+   @media (max-width: 767.98px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
    &__title {}
 
    &__form {}
@@ -86,6 +129,4 @@
    }
 
    &__button {}
-
-
 }

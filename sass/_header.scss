@@ -1,7 +1,6 @@
 .header {
    margin-top: 11px;
    margin-bottom: 60px;
-   display: none;
 
    @media (max-width: 991.98px) {
       margin-bottom: 30px;
@@ -166,7 +165,7 @@
 
       @media (max-width: 575.98px) {
          text-align: center;
-         padding-right: 0;
+         padding: 0 30px;
       }
    }
 
