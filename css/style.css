@@ -272,7 +272,7 @@ html {
   font-weight: 600;
   font-size: 16px;
   text-decoration: underline;
-  background: url(/images/icons/Triangle_play.png) no-repeat 0 center;
+  background: url(../images/icons/Triangle_play.png) no-repeat 0 center;
 }
 
 @media (max-width: 991.98px) {
@@ -302,7 +302,7 @@ html {
 
 .hero-image__container {
   margin-top: 15px;
-  background: url(/images/100-layers.svg) no-repeat 100%/100%;
+  background: url(../images/100-layers.svg) no-repeat 100%/100%;
   width: 108%;
   height: 100%;
 }
@@ -375,7 +375,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url(/images/functions-bgr.svg) no-repeat center bottom;
+  background: url(../images/functions-bgr.svg) no-repeat center bottom;
 }
 
 .functions__title {
@@ -466,22 +466,22 @@ html {
 }
 
 .func-item .logo-1 {
-  background: #7752be url(/images/icons/func__icon1.png) no-repeat center;
+  background: #7752be url(../images/icons/func__icon1.png) no-repeat center;
   background-size: 10px;
 }
 
 .func-item .logo-2 {
-  background: #fab005 url(/images/icons/func__icon2.png) no-repeat center;
+  background: #fab005 url(../images/icons/func__icon2.png) no-repeat center;
   background-size: 15px;
 }
 
 .func-item .logo-3 {
-  background: #f03e3d url(/images/icons/func__icon3.png) no-repeat center;
+  background: #f03e3d url(../images/icons/func__icon3.png) no-repeat center;
   background-size: 15px;
 }
 
 .func-item .logo-4 {
-  background: #4dadf7 url(/images/icons/func__icon4.png) no-repeat center;
+  background: #4dadf7 url(../images/icons/func__icon4.png) no-repeat center;
   background-size: 15px;
 }
 
@@ -558,16 +558,16 @@ html {
 }
 
 .buyer__image .img-container-1 {
-  background: url(/images/buyer-1.svg) no-repeat 0/100% 100%;
+  background: url(../images/buyer-1.svg) no-repeat 0/100% 100%;
   min-height: 200px;
 }
 
 .buyer__image .img-container-2 {
-  background: url(/images/buyer-2.svg) no-repeat 0/100% 100%;
+  background: url(../images/buyer-2.svg) no-repeat 0/100% 100%;
 }
 
 .buyer__image .img-container-3 {
-  background: url(/images/buyer-3.svg) no-repeat 0/100% 100%;
+  background: url(../images/buyer-3.svg) no-repeat 0/100% 100%;
 }
 
 .text-item {
@@ -710,7 +710,7 @@ html {
 }
 
 .text-item-inverse__points .point-item-inverse {
-  background: url(/images/icons/buyer-2-check.svg) no-repeat 0 50%/30px;
+  background: url(../images/icons/buyer-2-check.svg) no-repeat 0 50%/30px;
   padding: 0 45px 0 67px;
   margin-bottom: 36px;
   color: #544837;
@@ -745,7 +745,7 @@ html {
 }
 
 .contact {
-  background: url(/images/contacts-bgr.svg) no-repeat center top;
+  background: url(../images/contacts-bgr.svg) no-repeat center top;
   margin-bottom: 30px;
 }
 
@@ -873,7 +873,7 @@ html {
 @media (max-width: 767.98px) {
   .expert-item__text {
     padding-left: 35px;
-    background: url(/images/icons/small_hand.svg) no-repeat 8px center/26px 20px;
+    background: url(../images/icons/small_hand.svg) no-repeat 8px center/26px 20px;
   }
 }
 
@@ -995,10 +995,6 @@ html {
   .expert-item-5 {
     position: static;
   }
-}
-
-.articles {
-  display: none;
 }
 
 .articles__title {
