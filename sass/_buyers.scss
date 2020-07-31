@@ -32,15 +32,16 @@
       }
 
       .img-container-1 {
-         background: url(/images/buyer-1.svg) no-repeat 0/100% 100%;
+         background: url(../images/buyer-1.svg) no-repeat 0/100% 100%;
+         min-height: 200px;
       }
 
       .img-container-2 {
-         background: url(/images/buyer-2.svg) no-repeat 0/100% 100%;
+         background: url(../images/buyer-2.svg) no-repeat 0/100% 100%;
       }
 
       .img-container-3 {
-         background: url(/images/buyer-3.svg) no-repeat 0/ 100% 100%;
+         background: url(../images/buyer-3.svg) no-repeat 0/ 100% 100%;
       }
    }
 }
@@ -49,17 +50,19 @@
    padding-right: 70px;
 
    @media (max-width: 991.98px) {
-      padding-right: 30px;
+      padding-right: 20px;
    }
+
    @media (max-width: 575.98px) {
       text-align: center;
-      padding: 0 15px;
+      padding: 0 25px;
    }
 
    &__pretitle {
       margin-bottom: 12px;
       font-size: 16px;
       color: #544837;
+
       @media (max-width: 575.98px) {
          text-align: center;
       }
@@ -94,6 +97,7 @@
    @media (max-width: 991.98px) {
       padding-right: 30px;
    }
+
    @media (max-width: 575.98px) {
       padding: 0 10px;
    }
@@ -121,14 +125,12 @@
          font-size: 14px;
          margin-bottom: 20px;
       }
+
       @media (max-width: 575.98px) {
          text-align: center;
       }
    }
 }
-
-
-
 
 .buyer-inverse {
    &__text {
@@ -138,6 +140,7 @@
       @media (max-width: 991.98px) {
          padding-left: 20px;
       }
+
       @media (max-width: 575.98px) {
          padding: 0;
       }
@@ -149,17 +152,14 @@
       padding-right: 0px;
       text-align: center;
    }
+
    @media (max-width: 575.98px) {
       padding: 0 15px;
    }
 
-   &__pretitle {
+   &__pretitle {}
 
-   }
-
-   &__title {
-
-   }
+   &__title {}
 
    &__text {
       @media (max-width: 991.98px) {
@@ -171,7 +171,7 @@
    &__points {
 
       .point-item-inverse {
-         background: url(/images/icons/buyer-2-check.svg) no-repeat 0 50%/auto;
+         background: url(../images/icons/buyer-2-check.svg) no-repeat 0 50%/30px;
          padding: 0 45px 0 67px;
          margin-bottom: 36px;
          color: #544837;
@@ -182,6 +182,7 @@
             text-align: justify;
             padding: 0 15px 0 50px;
             font-size: 14px;
+            line-height: 30px;
             margin-bottom: 15px;
          }
       }

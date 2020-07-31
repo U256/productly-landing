@@ -70,8 +70,6 @@
       .small-menu__signup {}
    }
 
-
-
    &__wide-menu {
       display: flex;
       margin-right: 51px;
@@ -209,7 +207,7 @@
       border-radius: 4px;
       background-color: #ff9900;
       color: #ffffff;
-      font-size: 1.6rem;
+      font-size: 16px;
       font-weight: 700;
 
       @media (max-width: 575.98px) {
@@ -225,9 +223,9 @@
       height: 53px;
       color: #ff9900;
       font-weight: 600;
-      font-size: 1.6rem;
+      font-size: 16px;
       text-decoration: underline;
-      background: url(/images/icons/Triangle_play.png) no-repeat 0 center;
+      background: url(../images/icons/Triangle_play.png) no-repeat 0 center;
 
       @media (max-width: 991.98px) {
          margin-top: 15px;
@@ -249,7 +247,7 @@
 
    &__container {
       margin-top: 15px;
-      background: url(/images/100-layers.svg) no-repeat 100%/100%;
+      background: url(../images/100-layers.svg) no-repeat 100%/100%;
       width: 108%;
       height: 100%;
 

@@ -1,7 +1,7 @@
 .functions {
    display: flex;
    flex-direction: column;
-   background: url(/images/functions-bgr.svg) no-repeat center bottom;
+   background: url(../images/functions-bgr.svg) no-repeat center bottom;
 
    &__title {
       margin: 22px auto 56px; //было сверху 82пх
@@ -69,22 +69,22 @@
    }
 
    .logo-1 {
-      background: #7752be url(/images/icons/func__icon1.png) no-repeat center;
+      background: #7752be url(../images/icons/func__icon1.png) no-repeat center;
       background-size: 10px;
    }
 
    .logo-2 {
-      background: #fab005 url(/images/icons/func__icon2.png) no-repeat center;
+      background: #fab005 url(../images/icons/func__icon2.png) no-repeat center;
       background-size: 15px;
    }
 
    .logo-3 {
-      background: #f03e3d url(/images/icons/func__icon3.png) no-repeat center;
+      background: #f03e3d url(../images/icons/func__icon3.png) no-repeat center;
       background-size: 15px;
    }
 
    .logo-4 {
-      background: #4dadf7 url(/images/icons/func__icon4.png) no-repeat center;
+      background: #4dadf7 url(../images/icons/func__icon4.png) no-repeat center;
       background-size: 15px;
    }
 
