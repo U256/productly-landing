@@ -28,10 +28,9 @@
             <button class="navbar-account__signin">Sign In</button>
             <button class="navbar-account__signup">Sign Up</button>
          </div>
-         <button class="navbar-burger">
-            <img src="images/icons/burger-icon.svg" alt="menu">
-         </button>
+         <button class="navbar-burger"></button>
       </div>
+      <div class="header__accordeon"></div>
       <div class="header__hero">
          <div class="hero-present">
             <h1 class="hero-present__title">The Design Thinking superpowers</h1>
@@ -342,9 +341,15 @@
       </div>
    </footer>
    <script>
-      let burgerBtn = document.querySelector("navbar-button");
-      console.log(burgerBtn);
-      console.log();
+      let burgerBtn = document.querySelector(".navbar-burger");
+
+      burgerBtn.addEventListener("click", e => {
+         
+         burgerBtn.classList.toggle("navbar-burger_active");
+         document.querySelector(".header__accordeon").classList.toggle("header__accordeon_active");
+         document.querySelector(".navbar-nav").classList.toggle("navbar-nav_active");
+         document.querySelector(".navbar-account").classList.toggle("navbar-account_active");
+      });
    </script>
 </body>
 

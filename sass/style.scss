@@ -14,14 +14,14 @@ html {
    }
 }
 
-@import '_header';
 @import '_fonts';
+
+@import '_header';
 @import '_functions';
 @import '_buyers';
 @import '_contact';
 @import '_articels';
 @import '_footer';
-
 
 
 //от 320px до 576px авто ширина контента и фиксированные отступы 10px. 
@@ -57,3 +57,5 @@ section,   header,   footer {
       padding: 0 calc(50vw - 554px);
    }
 }
+
+

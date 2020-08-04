@@ -27,10 +27,11 @@
       flex: 0 1 21%;
 
       @media (max-width: 991.98px) {
+         order: 3;  
          flex: 0 1 33%;
       }
       @media (max-width: 767.98px) {
-         order: 3;  
+         
       }
    }
 
@@ -39,9 +40,10 @@
 
       @media (max-width: 991.98px) {
          flex: 0 1 33%;
+         order: 4;
       }
       @media (max-width: 767.98px) {
-         order: 4;
+         
       }
    }
 
@@ -49,13 +51,12 @@
       flex: 0 1 29%;
 
       @media (max-width: 991.98px) {
-         flex: 0 1 33%;
-      }
-      @media (max-width: 767.98px) {
-         align-self: center;
          order: 2;
          flex: 1 1 100%;
          margin-bottom: 30px;
+      }
+      @media (max-width: 767.98px) {
+         align-self: center;
       }
    }
 }
@@ -114,19 +115,51 @@
 }
 
 .sign-bar {
-   @media (max-width: 767.98px) {
+
+   @media (max-width: 991.98px) {
       display: flex;
       flex-direction: column;
       align-items: center;
    }
-   &__title {}
 
-   &__form {}
+   &__title {
+      @media (max-width: 575.98px) {
+         text-align: center;
+         margin-left: 5px;
+         margin-right: 5px;
+      }
+   }
+
+   // &__form {}
+
 
    //in form:
    &__input {
+      width: 325px;
+      height: 48px;
+      opacity:1;
+      padding-left: 12px;
+      color: #bcd0e5;
+      font-size: 16px;
+      font-family: 'Poppins';
       display: block;
+      margin-bottom: 15px;
+
+      @media (max-width: 575.98px) {
+         width: 300px;
+      }
    }
 
-   &__button {}
+   &__button {
+      width: 131px;
+      height: 39px;
+      background-color:#FF9900;
+      outline: none;
+      border: none;
+
+      color:#FFFFFF;
+      font-family:'Poppins';
+      font-weight: 400;
+      font-size: 15px;
+   }
 }
