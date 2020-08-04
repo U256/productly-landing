@@ -17,37 +17,27 @@
             <img class="navbar-logo__text" src="images/icons/text-in-logo.svg" alt="productly">
          </div>
          <nav class="navbar-nav">
-            <button class="navbar-nav__burger">
-               <img src="images/icons/burger-icon.svg" alt="menu">
-            </button>
-            <!-- <ul class="navbar-nav__small-menu">
-               <li><a href="#">Product</a></li>
-               <li><a href="#">Customers</a></li>
-               <li><a href="#">Pricng</a></li>
-               <li><a href="#">Resources</a></li>
-               <div class="navbar-login">
-                  <button class="small-menu__signin navbar-login__signin">Sign In</button>
-                  <button class="small-menu__signup navbar-login__signup">Sign Up</button>
-               </div>
-            </ul> -->
-            <ul class="navbar-nav__wide-menu">
+            <ul class="navbar-nav__ul">
                <li><a href="#">Product</a></li>
                <li><a href="#">Customers</a></li>
                <li><a href="#">Pricng</a></li>
                <li><a href="#">Resources</a></li>
             </ul>
-
          </nav>
-         <div class="navbar-login">
-            <button class="navbar-login__signin">Sign In</button>
-            <button class="navbar-login__signup">Sign Up</button>
+         <div class="navbar-account">
+            <button class="navbar-account__signin">Sign In</button>
+            <button class="navbar-account__signup">Sign Up</button>
          </div>
+         <button class="navbar-burger">
+            <img src="images/icons/burger-icon.svg" alt="menu">
+         </button>
       </div>
       <div class="header__hero">
          <div class="hero-present">
             <h1 class="hero-present__title">The Design Thinking superpowers</h1>
             <h2 class="hero-present__text">
-               Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.
+               Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your
+               next user experience.
             </h2>
             <div class="hero-present__buttons">
                <button class="hero-present__start-btn">Get started</button>
@@ -299,7 +289,6 @@
             <div class="postbar-item__title">Success Steps For Your Personal Or Business Life</div>
          </div>
       </div>
-      <div class="articles__endline"></div>
    </section>
    <footer class="footer">
       <div class="footer__logo">
@@ -352,6 +341,11 @@
          </div>
       </div>
    </footer>
+   <script>
+      let burgerBtn = document.querySelector("navbar-button");
+      console.log(burgerBtn);
+      console.log();
+   </script>
 </body>
 
 </html>

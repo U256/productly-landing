@@ -157,9 +157,9 @@
       padding: 0 15px;
    }
 
-   &__pretitle {}
+   // &__pretitle {}
 
-   &__title {}
+   // &__title {}
 
    &__text {
       @media (max-width: 991.98px) {
@@ -169,7 +169,6 @@
    }
 
    &__points {
-
       .point-item-inverse {
          background: url(../images/icons/buyer-2-check.svg) no-repeat 0 50%/30px;
          padding: 0 45px 0 67px;
