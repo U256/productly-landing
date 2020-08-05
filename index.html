@@ -352,7 +352,10 @@
 
       window.onresize = function () {
          if (window.matchMedia('(min-width: 767px)').matches) {
+            burgerBtn.classList.remove("navbar-burger_active");
             document.querySelector(".header__accordeon").classList.remove("header__accordeon_active");
+            document.querySelector(".navbar-nav").classList.remove("navbar-nav_active");
+            document.querySelector(".navbar-account").classList.remove("navbar-account_active");
          }
       };
    </script>
