@@ -344,12 +344,17 @@
       let burgerBtn = document.querySelector(".navbar-burger");
 
       burgerBtn.addEventListener("click", e => {
-
          burgerBtn.classList.toggle("navbar-burger_active");
          document.querySelector(".header__accordeon").classList.toggle("header__accordeon_active");
          document.querySelector(".navbar-nav").classList.toggle("navbar-nav_active");
          document.querySelector(".navbar-account").classList.toggle("navbar-account_active");
       });
+
+      window.onresize = function () {
+         if (window.matchMedia('(min-width: 767px)').matches) {
+            document.querySelector(".header__accordeon").classList.remove("header__accordeon_active");
+         }
+      };
    </script>
 </body>
 
