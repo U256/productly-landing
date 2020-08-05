@@ -22,12 +22,13 @@
       z-index: -1;
       border-radius: 18px;
       transform: translate(0, -100% );
-      transition: 0.4s;
+      transition: 0.5s ease 0.3s;
+      background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(255,255,255,0.8714980434363997) 15%, rgba(251,194,112,0.8771318462533011) 100%);
 
       &_active {
          height: 120px;
          transform: translate(0, 0);
-         background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(255,255,255,0.8714980434363997) 15%, rgba(251,194,112,0.8771318462533011) 100%);
+         transition: 0.4s;
       }
    }
 
@@ -51,7 +52,7 @@
 }
 
 .navbar-nav { 
-   transition: 0.2s;
+   transition: 0.4s;
 
    @media (max-width: 767.98px) { /////////////!
       visibility: hidden;
@@ -64,6 +65,7 @@
    &_active {   ///222222
       visibility: visible;
       opacity: 1;
+      transition: 0.4s ease 0.3s;
    }
 
    &__ul {
@@ -114,7 +116,7 @@
 }
 
 .navbar-account {
-   transition: 0.2s;
+   transition: 0.3s;
 
     @media (max-width: 767.98px) { /////////////!
       visibility: hidden;
@@ -133,6 +135,7 @@
    &_active {   ////22222
       visibility: visible;
       opacity: 1;  
+      transition: 0.3s ease 0.3s;
    }
 
    &__signin {
