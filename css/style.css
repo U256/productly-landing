@@ -156,7 +156,7 @@ html {
 
 @media (max-width: 991.98px) {
   .navbar-nav__ul {
-    margin-right: 5px;
+    margin-right: 2px;
   }
 }
 
@@ -269,7 +269,8 @@ html {
 
 @media (max-width: 991.98px) {
   .navbar-account__signin {
-    width: 76px;
+    width: 73px;
+    margin-right: 7px;
   }
 }
 
@@ -1044,7 +1045,7 @@ html {
 @media (max-width: 1199.98px) {
   .expert-item-2 {
     top: 475px;
-    left: 40px;
+    left: 20px;
   }
 }
 
@@ -1062,7 +1063,7 @@ html {
 
 @media (max-width: 1199.98px) {
   .expert-item-3 {
-    top: 640px;
+    top: 670px;
     left: 20%;
   }
 }
@@ -1081,8 +1082,8 @@ html {
 
 @media (max-width: 1300px) {
   .expert-item-4 {
-    top: 500px;
-    right: 5px;
+    top: 520px;
+    right: -5px;
   }
 }
 
