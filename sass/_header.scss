@@ -117,6 +117,8 @@
 
 .navbar-account {
    transition: 0.3s;
+   display: flex;
+   align-items: center;
 
     @media (max-width: 767.98px) { /////////////!
       visibility: hidden;
