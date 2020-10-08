@@ -1,0 +1,63 @@
+.prim-btn {
+  padding: 13px 22px;
+  outline: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 1.6rem;
+  background-color: #ff9900;
+  color: #ffffff;
+  border: 1px solid transparent;
+	transition: 0.1s;
+	cursor: pointer;
+	animation: clickbait 4s linear infinite 1s forwards;
+
+  &._clean {
+    color: #173a56;
+    border: 1px solid #bcd0e5;
+    background-color: #fff;
+  }
+
+  @media (max-width: 1200px) {
+    padding: 11px 20px;
+  }
+
+  @media (max-width: 992px) {
+    padding: 10px 5px;
+  }
+
+  &:focus,
+  &:hover {
+		border: 1px solid rgb(179, 127, 127);
+		box-shadow: 2px 2px 3px 0 #000;
+	}
+
+	&:hover {
+		text-decoration: underline;
+	}
+	
+	&:active {
+		transform: translate(2px, 2px);
+		box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.575);
+  }
+}
+
+.prim-link {
+	text-decoration: none;
+	font-size: 1.6rem;
+	line-height: 2.6rem;
+	color: #2f281e;
+	letter-spacing: 0.3px;
+	outline: none;
+	border: none;
+	border: 1px solid transparent;
+
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
+
+	&:active {
+		font-weight: 600;
+		letter-spacing: 0.2px;
+	}
+}

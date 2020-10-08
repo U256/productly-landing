@@ -2,6 +2,7 @@ html {
    font-size: 10px;
    font-family: 'Poppins', sans-serif;
    font-weight: 500;
+   color: #544837;
 }
 
 * {
@@ -14,7 +15,13 @@ html {
    }
 }
 
+h1, h2, h3, h4, h5, h6 {
+   color: #2f281e
+}
+
 @import '_fonts';
+
+@import 'common-items';
 
 @import '_header';
 @import '_functions';
@@ -23,6 +30,18 @@ html {
 @import '_articels';
 @import '_footer';
 
+@import 'animation-for-items';
+
+/*
+._anim--custom, 
+._anim--up, 
+._anim--down, 
+._anim--left, 
+._anim--right, 
+._anim--jump-out, 
+._anim--zoom-in, 
+._anim-wrapper
+*/
 
 //от 320px до 576px авто ширина контента и фиксированные отступы 10px. 
 //от 576px до 768px ширина 540px и динамические отступы. 
