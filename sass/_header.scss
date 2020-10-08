@@ -31,9 +31,13 @@
     );
 
     &_active {
-      height: 120px;
+      height: 100px;
       transform: translate(0, 0);
       transition: 0.4s;
+
+      @media (max-width: 576px) {
+        height: 125px;
+      }
     }
   }
 
