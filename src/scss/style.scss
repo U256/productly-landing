@@ -19,16 +19,17 @@ h1, h2, h3, h4, h5, h6 {
    color: #2f281e
 }
 
-@import '_fonts';
+@import 'reset';
+@import 'fonts';
 
 @import 'common-items';
 
-@import '_header';
-@import '_functions';
-@import '_buyers';
-@import '_contact';
-@import '_articels';
-@import '_footer';
+@import 'header';
+@import 'functions';
+@import 'buyers';
+@import 'contact';
+@import 'articels';
+@import 'footer';
 
 @import 'animation-for-items';
 

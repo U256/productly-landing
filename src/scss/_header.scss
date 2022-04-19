@@ -171,7 +171,7 @@
 }
 
 .navbar-burger {
-  background: url(../images/icons/burger-icon.svg) no-repeat center/contain;
+  background: url(../img/icons/burger-icon.svg) no-repeat center/contain;
   width: 37px;
   height: 37px;
   display: none;
@@ -183,7 +183,7 @@
   margin-bottom: 5px;
 
   &_active {
-    background: url(../images/icons/close-icon.svg) center/30px 30px no-repeat;
+    background: url(../img/icons/close-icon.svg) center/30px 30px no-repeat;
   }
 
   @media (max-width: 767.98px) {
@@ -268,7 +268,7 @@
     color: #ff9900;
     font-weight: 600;
     text-decoration: underline;
-    background: url(../images/icons/Triangle_play.png) center left 5px no-repeat;
+    background: url(../img/icons/Triangle_play.png) center left 5px no-repeat;
     border-radius: 15px;
     transition-delay: 1s;
 
@@ -297,7 +297,7 @@
 
   &__container {
     margin-top: 15px;
-    background: url(../images/100-layers.svg) no-repeat 100%/100%;
+    background: url(../img/100-layers.svg) no-repeat 100%/100%;
     width: 108%;
     height: 100%;
 

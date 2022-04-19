@@ -1,5 +1,5 @@
 .contact {
-  background: url(../images/contacts-bgr.svg) no-repeat center top;
+  background: url(../img/contacts-bgr.svg) no-repeat center top;
   margin-bottom: 30px;
 
   &__content-wrapper {
@@ -83,7 +83,7 @@
 
     @media (max-width: 767.98px) {
       padding-left: 35px;
-      background: url(../images/icons/small_hand.svg) no-repeat 8px center/26px
+      background: url(../img/icons/small_hand.svg) no-repeat 8px center/26px
         20px;
     }
   }
