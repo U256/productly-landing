@@ -1,4 +1,6 @@
-# gulp-template
+# Productly
+
+Simple html + sass project served by gulp
 
 ### initialize project:
 `npm i`
